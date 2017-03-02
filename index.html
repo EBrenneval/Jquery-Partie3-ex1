@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-2.2.4.js"></script>
+    <title>ExercicesJqueryPartie3</title>
+  </head>
+  <body>
+<form>
+  <button type="button" name="button" id="button">Envoyer</button>
+  <p>Vive le Jquery!</p>
+</form>
+<script>
+$(function() {     //declare la fction
+  var number = 0   // declaration d'une variable = a zero
+  $("#button").click(function(){  // appel du bouton , et evenement click
+    number ++;                    // la var augmente a chaque clic
+  $("p").text(number);            // appel du paragraphe et de la var
+  })
+})
+</script>
+  </body>
+</html>
